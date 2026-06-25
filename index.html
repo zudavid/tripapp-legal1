@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TripApp — 法律條款</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #1a2332; background: #f8f9fb; line-height: 1.8;
+  }
+  .container { max-width: 680px; margin: 0 auto; padding: 40px 20px 80px; }
+  .nav { display: flex; gap: 8px; margin-bottom: 40px; position: sticky; top: 0; background: #f8f9fb; padding: 16px 0; z-index: 10; }
+  .nav a {
+    padding: 8px 18px; border-radius: 10px; font-size: 14px; font-weight: 600;
+    text-decoration: none; color: #2b4c6f; background: #e6f1fb; border: 1px solid #b5d4f4;
+    transition: all 0.2s;
+  }
+  .nav a:hover, .nav a.active { background: #2b4c6f; color: #fff; border-color: #2b4c6f; }
+  h1 { font-size: 28px; font-weight: 700; color: #2b4c6f; margin-bottom: 6px; }
+  .subtitle { font-size: 13px; color: #8593a0; margin-bottom: 32px; }
+  h2 { font-size: 18px; font-weight: 600; color: #2b4c6f; margin-top: 32px; margin-bottom: 12px; padding-bottom: 6px; border-bottom: 1px solid #e2e8f0; }
+  h3 { font-size: 15px; font-weight: 600; color: #3a4250; margin-top: 20px; margin-bottom: 8px; }
+  p, li { font-size: 14px; color: #3a4250; margin-bottom: 8px; }
+  ul { padding-left: 20px; margin-bottom: 12px; }
+  li { margin-bottom: 4px; }
+  .highlight { background: #e6f1fb; border-left: 3px solid #2b4c6f; padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 13px; }
+  .contact { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px; margin-top: 24px; }
+  .contact-title { font-size: 14px; font-weight: 600; color: #2b4c6f; margin-bottom: 8px; }
+  .section { display: none; }
+  .section.active { display: block; }
+  .footer { text-align: center; font-size: 12px; color: #a0aab5; margin-top: 48px; padding-top: 24px; border-top: 1px solid #e2e8f0; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="nav">
+  <a href="#" onclick="showSection('privacy'); return false;" id="nav-privacy" class="active">隱私權政策</a>
+  <a href="#" onclick="showSection('tos'); return false;" id="nav-tos">服務條款</a>
+</div>
+
+<!-- ==================== 隱私權政策 ==================== -->
+<div id="privacy" class="section active">
+
+<h1>隱私權政策</h1>
+<p class="subtitle">最後更新日期：2026 年 6 月 23 日</p>
+
+<p>TripApp（以下簡稱「本應用程式」）由開發者 David Yu（以下簡稱「我們」）開發及營運。我們重視您的隱私，本政策說明我們如何收集、使用、儲存及保護您的個人資料。</p>
+
+<h2>一、我們收集哪些資料</h2>
+
+<h3>1. 帳號資料</h3>
+<ul>
+  <li>電子郵件地址（用於註冊和登入）</li>
+</ul>
+
+<h3>2. 使用者產生的內容</h3>
+<ul>
+  <li>行程規劃資料（行程名稱、目的地、日期、景點、交通、住宿、預算等）</li>
+  <li>收藏的景點資料（名稱、地址、分類、備註）</li>
+  <li>上傳的照片（景點照片、機票憑證、住宿憑證等）</li>
+</ul>
+
+<h3>3. 位置資料</h3>
+<ul>
+  <li>裝置的 GPS 位置（僅在您授權後使用，用於在地圖上顯示您的所在位置及附近景點）</li>
+</ul>
+
+<h3>4. 自動收集的技術資料</h3>
+<ul>
+  <li>裝置類型、作業系統版本（用於改善應用程式相容性）</li>
+</ul>
+
+<h2>二、我們如何使用您的資料</h2>
+<ul>
+  <li>提供行程規劃、景點收藏、地圖顯示等核心功能</li>
+  <li>透過 AI 服務（Claude API）為您生成行程建議、辨識景點</li>
+  <li>透過 Google Maps / Google Places API 提供地圖及景點搜尋功能</li>
+  <li>改善應用程式的功能與使用體驗</li>
+</ul>
+
+<h2>三、第三方服務</h2>
+<p>本應用程式使用以下第三方服務，您的部分資料可能會傳送至這些服務：</p>
+<ul>
+  <li><strong>Supabase</strong> — 資料儲存與帳號驗證（資料儲存於雲端伺服器）</li>
+  <li><strong>Google Maps / Google Places API</strong> — 地圖顯示與景點搜尋（傳送搜尋關鍵字與位置資訊）</li>
+  <li><strong>Anthropic Claude API</strong> — AI 行程生成與景點辨識（傳送行程相關文字資料）</li>
+</ul>
+<p>這些第三方服務各有其隱私權政策，建議您參閱：</p>
+<ul>
+  <li><a href="https://supabase.com/privacy" target="_blank">Supabase 隱私權政策</a></li>
+  <li><a href="https://policies.google.com/privacy" target="_blank">Google 隱私權政策</a></li>
+  <li><a href="https://www.anthropic.com/privacy" target="_blank">Anthropic 隱私權政策</a></li>
+</ul>
+
+<h2>四、資料儲存與安全</h2>
+<ul>
+  <li>您的資料儲存於 Supabase 提供的雲端資料庫，採用行級安全策略（Row Level Security），確保只有您本人能存取自己的資料</li>
+  <li>上傳的照片儲存於 Supabase Storage，採用簽章 URL 存取控制</li>
+  <li>我們不會將您的個人資料出售或出租給任何第三方</li>
+</ul>
+
+<h2>五、您的權利</h2>
+<p>您隨時可以：</p>
+<ul>
+  <li>在應用程式內查看、編輯或刪除您的行程與收藏資料</li>
+  <li>撤回位置存取權限（透過裝置的「設定」→「隱私權與安全性」→「定位服務」）</li>
+  <li>要求我們刪除您的帳號及所有相關資料（請透過下方聯絡方式聯繫我們）</li>
+</ul>
+
+<h2>六、兒童隱私</h2>
+<p>本應用程式不針對 13 歲以下兒童設計，我們不會故意收集 13 歲以下兒童的個人資料。若您發現有兒童的資料被收集，請聯繫我們，我們會立即刪除。</p>
+
+<h2>七、隱私權政策的變更</h2>
+<p>我們可能會不定期更新本隱私權政策。變更後的政策將發佈於本頁面，並更新「最後更新日期」。建議您定期查看本政策。</p>
+
+<div class="contact">
+  <div class="contact-title">聯絡我們</div>
+  <p>如果您對本隱私權政策有任何疑問，請透過以下方式聯繫：</p>
+  <p>電子郵件：<strong>tripapp.contact@gmail.com</strong></p>
+</div>
+
+</div>
+
+<!-- ==================== 服務條款 ==================== -->
+<div id="tos" class="section">
+
+<h1>服務條款</h1>
+<p class="subtitle">最後更新日期：2026 年 6 月 23 日</p>
+
+<p>歡迎使用 TripApp（以下簡稱「本應用程式」）。使用本應用程式即表示您同意以下服務條款。請在使用前仔細閱讀。</p>
+
+<h2>一、服務說明</h2>
+<p>TripApp 是一款旅遊行程規劃應用程式，提供以下功能：</p>
+<ul>
+  <li>AI 輔助行程生成與規劃</li>
+  <li>景點收藏與地圖標記</li>
+  <li>機票、住宿、預算管理</li>
+  <li>截圖辨識景點</li>
+  <li>打包清單、費用分帳等旅行工具</li>
+</ul>
+
+<h2>二、帳號</h2>
+<ul>
+  <li>您須提供有效的電子郵件地址註冊帳號</li>
+  <li>您有責任保管自己的帳號與密碼安全</li>
+  <li>您須對帳號下的所有活動負責</li>
+</ul>
+
+<h2>三、使用者內容</h2>
+<ul>
+  <li>您透過本應用程式建立的行程、收藏、照片等內容，著作權歸您所有</li>
+  <li>您授權我們在提供服務所必要的範圍內儲存、處理及顯示您的內容</li>
+  <li>您不得上傳違法、侵權、有害或不當的內容</li>
+</ul>
+
+<h2>四、AI 服務免責聲明</h2>
+<div class="highlight">
+  本應用程式使用 AI 技術（Anthropic Claude）生成行程建議與景點資訊。AI 生成的內容僅供參考，不構成專業旅遊建議。我們不保證 AI 生成的資訊完全準確、即時或完整。請您在實際旅行前自行確認相關資訊（營業時間、價格、交通方式等）。
+</div>
+
+<h2>五、禁止行為</h2>
+<p>使用本應用程式時，您不得：</p>
+<ul>
+  <li>違反任何適用的法律或法規</li>
+  <li>干擾或破壞應用程式的正常運作</li>
+  <li>嘗試未經授權存取其他使用者的資料</li>
+  <li>利用本應用程式進行任何商業性垃圾資訊或惡意行為</li>
+</ul>
+
+<h2>六、服務中斷與終止</h2>
+<ul>
+  <li>我們保留隨時修改、暫停或終止服務的權利，恕不另行通知</li>
+  <li>如您違反本條款，我們有權暫停或終止您的帳號</li>
+  <li>服務終止後，我們可能會刪除您的帳號資料</li>
+</ul>
+
+<h2>七、免責聲明</h2>
+<ul>
+  <li>本應用程式以「現況」提供，不提供任何明示或暗示的保證</li>
+  <li>我們不對因使用本應用程式產生的任何直接或間接損失負責</li>
+  <li>旅遊行程涉及的風險（天氣、交通、安全等）由使用者自行承擔</li>
+</ul>
+
+<h2>八、條款變更</h2>
+<p>我們保留隨時修改本服務條款的權利。變更後的條款將發佈於本頁面。繼續使用本應用程式即表示您同意修改後的條款。</p>
+
+<div class="contact">
+  <div class="contact-title">聯絡我們</div>
+  <p>如果您對本服務條款有任何疑問，請透過以下方式聯繫：</p>
+  <p>電子郵件：<strong>tripapp.contact@gmail.com</strong></p>
+</div>
+
+</div>
+
+<div class="footer">
+  © 2026 TripApp. All rights reserved.
+</div>
+
+</div>
+
+<script>
+function showSection(id) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.nav a').forEach(a => a.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.getElementById('nav-' + id).classList.add('active');
+  window.scrollTo(0, 0);
+}
+</script>
+</body>
+</html>
